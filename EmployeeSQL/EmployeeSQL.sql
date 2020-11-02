@@ -1,10 +1,11 @@
-DROP TABLE IF EXISTS dept_emp;
-DROP TABLE IF EXISTS dept_manager;
-DROP TABLE IF EXISTS departments;
-DROP TABLE IF EXISTS salaries;
-DROP TABLE IF EXISTS employees;
-DROP TABLE IF EXISTS titles;
+ALTER DATABASE "EmployeeSQL" SET datestyle TO 'ISO, MDY';
 
+-- DROP TABLE IF EXISTS dept_emp;
+-- DROP TABLE IF EXISTS dept_manager;
+-- DROP TABLE IF EXISTS departments;
+-- DROP TABLE IF EXISTS salaries;
+-- DROP TABLE IF EXISTS employees;
+-- DROP TABLE IF EXISTS titles;
 
 --1) create table titles
 create table titles (
@@ -35,15 +36,16 @@ select * from departments;
 create table employees (
 	emp_no int NOT NULL,
 	emp_title_id varchar(10) NOT NULL,
-    birth_date varchar NOT NULL,
+    birth_date date NOT NULL,
     first_name varchar(40) NOT NULL,
     last_name varchar(40) NOT NULL,
     sex varchar(5) NOT NULL,
-    hire_date varchar NOT NULL,
+    hire_date date NOT NULL,
 	primary key(emp_no),
 	foreign key(emp_title_id) references titles(title_id)
 );
-	
+
+
 -- Query all fields from the table
 select * from employees;
 
@@ -88,7 +90,7 @@ INNER join salaries as s on e.emp_no=s.emp_no;
 
 --2) List first name, last name, and hire date for employees who were hired in 1986.
 select first_name,last_name,hire_date from employees
-where hire_date like '%1986';
+where hire_date BETWEEN '1986/1/1' AND '1986/12/31';
 
 --3) List the manager of each department with the following information: 
 -- department number, department name, the manager's employee number, last name, first name.
