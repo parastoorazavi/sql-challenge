@@ -9,14 +9,10 @@
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
-**Description:**
-Analysing the happiness index of the world from the period 2015-2019.
-Data clean-up:
+There are some data of the company "Pewlett Hackard". They are going to work on a project which doing some research on employees of the corporation from the 1980s and 1990s.All that remain of the database of employees from that period are six CSV files. For this project we are donig:
 1.	Data Modeling
 2.	Data Engineering
 3.	Data Analysis
-4.	Make sure the data frame is consistent for all the data set.
-5.	Make sure no rows accidentally deleted
 
 
 **Summary**
@@ -32,14 +28,15 @@ Data clean-up:
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-**Questions to Answer:** <br>
-1.	What is the correlation of country happiness and 7 factors?
-2.	What is determining factor look like comparing to bottom 10?
-3.	Do the countries in top 10 and bottom 10 stay consistent over the year?
-4.	What are the countries that making greatest changes?
-5.	What are the counties did not make any changes?
-6.	Can we do a prediction in year 2020?
-7.	Which region has the happiest countries?
+**Data Analysis:** <br>
+1.	List the following details of each employee: employee number, last name, first name, sex, and salary.
+2.	List first name, last name, and hire date for employees who were hired in 1986.
+3.	List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+4.	List the department of each employee with the following information: employee number, last name, first name, and department name.
+5.	List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+6.	List all employees in the Sales department, including their employee number, last name, first name, and department name.
+7.	List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+8.	In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
 
 ## ✍️ Observable Trends <a name = "trends"></a>
