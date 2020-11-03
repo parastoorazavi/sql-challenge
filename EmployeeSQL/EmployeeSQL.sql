@@ -14,11 +14,6 @@ create table departments (
 	primary key(dept_no)
 );
 
--- COPY departments(dept_no, dept_name)
--- FROM '/Users/Parastoo/Desktop/homework SQL/data/departments.csv'
--- DELIMITER ','
--- CSV HEADER;
-
 -- Query all fields from the table
 select * from departments;
 
