@@ -5,7 +5,7 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Bonus Part](#Bonus)
+- [Bonus Part](#bonus_part)
 
 ## 🧐 About <a name = "about"></a>
 There are some data of the company "Pewlett Hackard". They are going to work on a project which doing some research on employees of the corporation from the 1980s and 1990s.All that remain of the database of employees from that period are six CSV files. For this project we are donig:
