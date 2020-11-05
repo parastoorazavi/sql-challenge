@@ -5,7 +5,7 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Bonus Part](#Bonus)
+- [Bonus Part](#bonus_part)
 
 ## 🧐 About <a name = "about"></a>
 There are some data of the company "Pewlett Hackard". They are going to work on a project which doing some research on employees of the corporation from the 1980s and 1990s.All that remain of the database of employees from that period are six CSV files. For this project we are donig:
@@ -33,7 +33,7 @@ Inspect the CSVs and sketch out an ERD of the tables.
 7.	List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 8.	In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-## :doughnut:Bonus Part -	Import the SQL database into Pandas.
+## :doughnut:Bonus Part -	Import the SQL database into Pandas. <a name = "bonus_part"></a>
 
 1.	Create a histogram to visualize the most common salary ranges for employees.
 2.	Create a bar chart of average salary by title.
