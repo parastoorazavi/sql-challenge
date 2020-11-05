@@ -55,6 +55,7 @@ select * from employees;
 create table salaries (
 	emp_no int NOT NULL,
     salary int NOT NULL,
+	primary key(emp_no),
 	foreign key(emp_no) references employees(emp_no)
 );
 	

@@ -1,11 +1,11 @@
 ALTER DATABASE "EmployeeSQL" SET datestyle TO 'ISO, MDY';
 
--- DROP TABLE IF EXISTS dept_emp;
--- DROP TABLE IF EXISTS dept_manager;
--- DROP TABLE IF EXISTS departments;
--- DROP TABLE IF EXISTS salaries;
--- DROP TABLE IF EXISTS employees;
--- DROP TABLE IF EXISTS titles;
+DROP TABLE IF EXISTS dept_emp;
+DROP TABLE IF EXISTS dept_manager;
+DROP TABLE IF EXISTS departments;
+DROP TABLE IF EXISTS salaries;
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS titles;
 
 -- create table departments
 create table departments (
@@ -62,6 +62,7 @@ select * from employees;
 create table salaries (
 	emp_no int NOT NULL,
     salary int NOT NULL,
+	primary key(emp_no),
 	foreign key(emp_no) references employees(emp_no)
 );
 	
